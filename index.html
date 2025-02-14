@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shen Yang - Personal Webpage</title>
+    <style>
+        :root {
+            --bg-light: #f4f4f4;
+            --bg-dark: #1a1a1a;
+            --text-light: #333;
+            --text-dark: #ddd;
+            --accent: #0078ff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-light);
+            color: var(--text-light);
+            transition: all 0.3s ease;
+        }
+        header {
+            background: var(--accent);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--accent);
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dark-mode {
+            background: var(--bg-dark);
+            color: var(--text-dark);
+        }
+        .dark-mode section {
+            background: #222;
+        }
+        .toggle-btn {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            background: var(--accent);
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Shen Yang</header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="toggle-btn" onclick="toggleDarkMode()">Toggle Mode</div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Shen Yang. I have experience in Chinese-Korean translation, advertising risk control, policy review, and business data analysis. Currently, I'm pursuing my Master of IT in Business (MITB) at SMU, with a focus on data analysis and business technology.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Advertising Risk Control Data Analysis</strong> - A study on policy and security in digital advertising.</li>
+            <li><strong>Natural Language Processing (NLP) Analysis</strong> - Exploring language structures for insights.</li>
+            <li><strong>Financial Accessibility in Kenya</strong> - Data analysis using SAS Viya.</li>
+        </ul>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Coming soon... I will be sharing insights on data analysis, business trends, and more.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/shenyang</a></p>
+        <p>GitHub: <a href="#" target="_blank">github.com/shenyang</a></p>
+    </section>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
